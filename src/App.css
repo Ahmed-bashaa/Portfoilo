@@ -1,0 +1,132 @@
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  background-color: var(--body-color);
+  transition: background-color var(--transition);
+}
+
+::selection {
+  background-color: var(--selection-color);
+  color: white;
+}
+
+.root {
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.App {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 16px;
+}
+
+body[data-theme="dark"]::-webkit-scrollbar-track {
+  background: #242d49;
+}
+
+body[data-theme="dark"]::-webkit-scrollbar-thumb {
+  background: #777;
+  border-radius: 20px;
+}
+
+body[data-theme="dark"]::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body[data-theme="light"]::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+body[data-theme="light"]::-webkit-scrollbar-thumb {
+  background: #494949;
+  border-radius: 20px;
+}
+
+body[data-theme="light"]::-webkit-scrollbar-thumb:hover {
+  background: #999999;
+}
