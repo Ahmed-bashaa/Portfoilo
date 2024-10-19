@@ -1,0 +1,194 @@
+.navbar {
+  position: relative;
+  background-color: var(--background-overlay2);
+}
+
+.navbar .nav-parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.navbar .logo-parent h1 a {
+  color: var(--orange);
+  font-size: 1.5rem;
+}
+
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar .nav-links a {
+  padding: 5px 10px;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.navbar .nav-links li:hover a {
+  color: var(--orange);
+}
+
+@media (max-width: 768px) {
+  .navbar .nav-links-parent {
+    opacity: 0;
+    position: absolute;
+    right: -50%;
+    top: 56px;
+    background-color: var(--background-color);
+    transition: var(--transition);
+    width: 200px;
+  }
+  .navbar .nav-links-parent.active {
+    right: 0;
+    opacity: 1;
+    z-index: 1000;
+  }
+  .navbar .nav-links-parent .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+  }
+  .navbar .nav-links-parent .nav-links li {
+    transition: var(--transition) margin;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    padding: 10px;
+  }
+  .navbar .nav-links-parent .nav-links li:last-child {
+    padding: 10px;
+    border: none;
+  }
+  .navbar .nav-links-parent .nav-links li:hover a {
+    margin-left: 10px;
+  }
+  .navbar .nav-links-parent.active a {
+    padding: 0;
+  }
+}
+
+/* Start Burger Menu */
+nav .container .burger-menu {
+  display: none;
+}
+nav .container .burger-menu {
+  width: 40px;
+  height: 25px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+nav .container .burger-menu span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: var(--burger-menu-background);
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transition: 0.25s ease-in-out;
+}
+nav .container .burger-menu span:nth-child(1) {
+  top: 0px;
+}
+
+nav .container .burger-menu span:nth-child(2),
+nav .container .burger-menu span:nth-child(3) {
+  top: 10px;
+}
+
+nav .container .burger-menu span:nth-child(4) {
+  top: 20px;
+}
+
+nav .container .burger-menu.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+nav .container .burger-menu.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+nav .container .burger-menu.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+nav .container .burger-menu.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+@media (max-width: 768px) {
+  nav .container .burger-menu {
+    display: block;
+  }
+}
+/* End Burger Menu */
+
+svg {
+  display: block;
+  font: 9.5em "Roboto", Arial, sans-serif;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+  stroke: #96ceb4;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+  stroke: #ffeead;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+  stroke: #ff6f69;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+  stroke: #ffcc5c;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+  stroke: #88d8b0;
+  animation-delay: -5s;
+}
+
+/** Start Animation **/
+
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%;
+  }
+}
+
+/** End Animation **/
+
+/* Navbar.css */

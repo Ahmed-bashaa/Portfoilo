@@ -1,0 +1,104 @@
+.projects {
+  padding: 50px 0;
+  position: relative;
+}
+
+.projects .projects-parent {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  border-radius: 50px;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .projects .projects-parent {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding: 0;
+  }
+}
+
+.projects .projects-parent .project {
+  overflow: hidden;
+  margin: 10px;
+  padding: 10px;
+  background-color: var(--project-background-color);
+  border-radius: 5px;
+  color: var(--text-color);
+  box-shadow: var(--project-box-shadow);
+}
+
+.projects .project .thumbnail {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.projects .project .thumbnail .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(59, 58, 58, 0.5);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.projects .project:hover .thumbnail .overlay {
+  opacity: 1;
+}
+
+.projects .project .thumbnail .overlay div {
+  background-color: #6e6e80af;
+  border-radius: 50%;
+  padding: 10px;
+  transition: var(--transition);
+}
+
+.projects .project .thumbnail .overlay div a {
+  color: white;
+}
+
+.projects .project .thumbnail .overlay div:hover {
+  background-color: #6e6e80;
+  transform: scale(1.1);
+}
+
+.projects .project .thumbnail .overlay div:nth-child(1):hover a,
+.projects .project .thumbnail .overlay div:nth-child(1):hover svg {
+  color: orange;
+}
+.projects .project .thumbnail .overlay div:nth-child(2):hover a {
+  color: #333333;
+}
+
+.projects .projects-parent .project img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.projects .project .project-info {
+  padding: 20px;
+}
+
+.projects .project .project-info .project-title {
+  color: var(--orange);
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.projects .project .project-info .project-description {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.projects .project .project-info .tech-stack span {
+  color: var(--orange);
+}

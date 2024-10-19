@@ -1,0 +1,105 @@
+.home {
+  height: 100vh;
+}
+
+.home .container {
+  height: 100%;
+  margin-top: 40px;
+  margin-top: 40px;
+}
+
+.home .parent-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.home .parent-content .left-content .greeting {
+  color: var(--text-color);
+  font-size: 1.7rem;
+}
+
+.home .parent-content .left-content .greeting p:first-child {
+  font-size: 20px;
+}
+
+.home .parent-content .left-content .greeting .name span,
+.home .parent-content .left-content .greeting .job-title {
+  color: var(--orange);
+}
+
+@media (max-width: 768px) {
+  .home .parent-content .left-content .greeting .nav-links {
+    justify-content: center;
+  }
+}
+
+.resume-btn {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.home .parent-content .right-content .img-parent {
+  width: 350px;
+  height: 350px;
+  background-image: url("../../assets/c8130fab-b5ed-4c2b-a180-2e2612eecce3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: morph 6s ease-in-out infinite;
+  background-blend-mode: multiply;
+  transition: var(--transition) box-shadow, var(--transition) filter;
+  box-shadow: inset 0px 0px 0px 13px var(--home-img-border);
+}
+
+body[data-theme="dark"] .home .parent-content .right-content .img-parent {
+  filter: grayscale(1);
+}
+
+body[data-theme="dark"] .home .parent-content .right-content .img-parent:hover {
+  filter: grayscale(0);
+  box-shadow: inset 0px 0px 0px 18px var(--home-img-border-hover);
+}
+
+/** Start Media Query **/
+
+@media (max-width: 768px) {
+  .home .parent-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .home .parent-content .left-content {
+    text-align: center;
+  }
+
+  .home .parent-content .left-content .resume-btn {
+    text-align: center;
+  }
+
+  .home .parent-content .right-content {
+    margin-top: 60px;
+  }
+
+  .home .parent-content .right-content .img-parent {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/** End Media Query **/
+
+/** Start Animation **/
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+/** End Animation **/
