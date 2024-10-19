@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/Portfoilo/static/css/main.8e68628d.css",
-    "main.js": "/Portfoilo/static/js/main.5e495562.js",
+    "main.js": "/Portfoilo/static/js/main.a62a0de1.js",
     "static/media/Recipes Website.png": "/Portfoilo/static/media/Recipes Website.e08d0919e792d24b1b07.png",
     "static/media/Daniels.png": "/Portfoilo/static/media/Daniels.caf57ac91b461ac3973f.png",
     "static/media/Mealify.png": "/Portfoilo/static/media/Mealify.1da6021b0fda1ab74e7c.png",
     "static/media/Weather.png": "/Portfoilo/static/media/Weather.5c84d39fcf642264bd6f.png",
     "static/media/freschCart.png": "/Portfoilo/static/media/freschCart.60002cc68898512850ef.png",
+    "static/media/CV_Ahmed_Mahmoud_Basha.pdf": "/Portfoilo/static/media/CV_Ahmed_Mahmoud_Basha.e7c9e1add0530bbb7091.pdf",
     "static/media/c8130fab-b5ed-4c2b-a180-2e2612eecce3.jpg": "/Portfoilo/static/media/c8130fab-b5ed-4c2b-a180-2e2612eecce3.cfa3e0c93aaba6c6edce.jpg",
     "static/media/WhatsApp Image 2024-07-02 at 19.43.42_e7a124d6.jpg": "/Portfoilo/static/media/WhatsApp Image 2024-07-02 at 19.43.42_e7a124d6.bc6e797ee4a5a615d7bf.jpg",
     "static/media/full stack.jpg": "/Portfoilo/static/media/full stack.07bdfc890bbb5751a958.jpg",
     "static/media/WhatsApp Image 2024-07-02 at 19.43.41_b72e24a3.jpg": "/Portfoilo/static/media/WhatsApp Image 2024-07-02 at 19.43.41_b72e24a3.dcbbbc61e29f6c03dff9.jpg",
     "static/media/WhatsApp Image 2024-07-01 at 20.07.41_11273750.jpg": "/Portfoilo/static/media/WhatsApp Image 2024-07-01 at 20.07.41_11273750.5aad5136eade673abbe4.jpg",
-    "static/media/CV_Ahmed_Mahmoud_Basha2.pdf": "/Portfoilo/static/media/CV_Ahmed_Mahmoud_Basha2.3a501fae6f2212c8928b.pdf",
     "static/media/NodejsBlack.jpg": "/Portfoilo/static/media/NodejsBlack.77f46a7a431107fc6e8b.jpg",
     "static/media/Bookmark.png": "/Portfoilo/static/media/Bookmark.b9cfccffc72bfc114749.png",
     "index.html": "/Portfoilo/index.html",
     "main.8e68628d.css.map": "/Portfoilo/static/css/main.8e68628d.css.map",
-    "main.5e495562.js.map": "/Portfoilo/static/js/main.5e495562.js.map"
+    "main.a62a0de1.js.map": "/Portfoilo/static/js/main.a62a0de1.js.map"
   },
   "entrypoints": [
     "static/css/main.8e68628d.css",
-    "static/js/main.5e495562.js"
+    "static/js/main.a62a0de1.js"
   ]
 }
